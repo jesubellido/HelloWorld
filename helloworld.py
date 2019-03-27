@@ -1,6 +1,6 @@
 import sys
 import os
-int lista[]
+lista[]
 x = input("Cómo te llamas?")
 for i in x:
 	int contador=0
