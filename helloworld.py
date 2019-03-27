@@ -2,7 +2,6 @@ name = input()
 abc = "abcdefghijklmnopqrstuvwxyz"
 contador = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
-
 for i in name:
     for j in range(26):
         if i==abc[j]:
@@ -11,3 +10,4 @@ for i in name:
 for k in range(26):
     if contador[k]>0:
         print(abc[k] + ":" + str(contador[k]))
+
