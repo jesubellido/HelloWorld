@@ -9,5 +9,6 @@ for e in word:
 	for i in word:
 		if e == i:
 			cant+=1
-	list.append(e)
-	print(e,"->",cant)
+	if e not in list:
+		list.append(e)
+		print(e,"->",cant)
