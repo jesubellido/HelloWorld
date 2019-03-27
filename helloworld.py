@@ -1,5 +1,13 @@
 import sys
 import os
 
-nombre = input()
-print("HOLA ..."+nombre)
+
+abcd = "abcdefghijklmnopqrstuvwxyz"
+
+nombre = input("Ingrese su nombre en minusculas: ")
+
+
+for caracter in abcd:
+    contador = nombre.count(caracter)
+    if contador > 0:
+        print("La letra ",caracter," se repite ",contador, ".")
