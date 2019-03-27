@@ -1,15 +1,13 @@
-import sys
-import os
+name = input()
+abc = "abcdefghijklmnopqrstuvwxyz"
+contador = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
-nombre =raw_input("Como te llamas?")
-contador = 0
-letra = ""
-for c in nombre:
-    for j in nombre:
-        if c==j:
-            contador += 1
-    contador=0
-    print(c+" se repite "+str(contador)+" veces." )
+for i in name:
+    for j in range(26):
+        if i==abc[j]:
+            contador[j]+=1
 
-
+for k in range(26):
+    if contador[k]>0:
+        print(abc[k] + ":" + str(contador[k]))
 
