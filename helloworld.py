@@ -1,9 +1,15 @@
 import sys
 import os
 
-nombre = input("Como te llamas?")
+nombre = input("Nombre ")
 c = 0
+letter = []
 for i in nombre:
-    if i != " ":
-       c=c+1
-print (c)
+    if i not in letter:
+        for j in range(0,len(nombre)):
+            if i == nombre[j]:
+                c+=1
+        letter.append(i)
+        print(i + " se repite " + str(c) + " vedes")
+        c=0
+
